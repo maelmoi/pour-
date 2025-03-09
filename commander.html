@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vente de Peanuts - Commander</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Passer une commande</h1>
+    <p>Choisissez vos paquets de peanuts</p>
+  </header>
+
+  <section id="commander">
+    <form id="commande-form">
+      <div class="produit">
+        <img src="paquet-100.jpg" alt="Paquet de 100 XAF">
+        <label>
+          <input type="checkbox" class="produit-checkbox" data-prix="100">
+          Paquet de 100 XAF
+        </label>
+        <input type="number" class="quantite" min="0" value="0" disabled>
+      </div>
+      <div class="produit">
+        <img src="paquet-750.jpg" alt="Paquet de 750 XAF">
+        <label>
+          <input type="checkbox" class="produit-checkbox" data-prix="750">
+          Paquet de 750 XAF
+        </label>
+        <input type="number" class="quantite" min="0" value="0" disabled>
+      </div>
+      <div class="produit">
+        <img src="paquet-1500.jpg" alt="Paquet de 1500 XAF">
+        <label>
+          <input type="checkbox" class="produit-checkbox" data-prix="1500">
+          Paquet de 1500 XAF
+        </label>
+        <input type="number" class="quantite" min="0" value="0" disabled>
+      </div>
+      <div class="produit">
+        <img src="paquet-2200.jpg" alt="Paquet de 2200 XAF">
+        <label>
+          <input type="checkbox" class="produit-checkbox" data-prix="2200">
+          Paquet de 2200 XAF
+        </label>
+        <input type="number" class="quantite" min="0" value="0" disabled>
+      </div>
+      <p>Total : <span id="total">0</span> XAF</p>
+      <button type="submit">Envoyer la commande sur WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contactez-moi sur WhatsApp pour toute question !</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
